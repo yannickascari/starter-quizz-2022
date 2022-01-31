@@ -3,11 +3,16 @@
   <form class="quiz-form" [formGroup]="quizForm">
     <label for="title">
       Title <br>
-      <input class="input-custom" type="text" id="name" [formControlName]="'name'">
+      <input class="input-custom" type="text" id="title" [formControlName]="'name'">
     </label>
+    <br>
+    Theme <br>
+    <select name="theme-field" id="theme" [formControlName]="'theme'">
+      <option *ngFor="let currentTheme of THEME_LIST" [value]="currentTheme">
+        {{currentTheme}}
+      </option>
+    </select>
     <br>
     <button type="submit" class="button-card" (click)="addQuiz()">Create</button>
   </form>
 </div>
-<!-- Uncomment below to see your form structure and how it changes-->
-<!-- <br><br>{{quizForm.getRawValue() | json}} -->

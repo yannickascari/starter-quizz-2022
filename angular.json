@@ -118,6 +118,7 @@
   },
   "defaultProject": "starter-quiz-2022",
   "cli": {
+    "analytics": "998cf8bf-dc13-48a5-9774-4d8f9104705f",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }
